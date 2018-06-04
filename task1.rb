@@ -3,9 +3,7 @@
 # На вход подается строка длины n. 1 <= n <= 10000
 
 def filter(str)
-  str.split('')
-      .select{|char| !(%w(Р К Н р к н).include? char)}
-      .join
+  puts(ARGV[0].tr('ркнРКН',''))
 end
 
 puts filter(ARGV[0])

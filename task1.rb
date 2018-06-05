@@ -1,5 +1,1 @@
-def filter(str)
-  puts(str.tr('ркнРКН',''))
-end
-
-puts filter(ARGV[0])
+puts ARGV[0].tr('ркнРКН','').force_encoding("UTF-8")
